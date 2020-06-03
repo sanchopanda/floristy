@@ -1,10 +1,31 @@
-.header {
+.header__container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  padding: 15px 30px 20px;
+}
+
+.header__logo {
   position: relative;
+  z-index: 10;
+}
+
+.header__burger {
+  position: relative;
+  z-index: 10;
 }
 
 .header__menu {
   position: absolute;
-  top: calc(-100vh + 65px);
-  top: 0;
-  //z-index: -1;
+  top: calc(-100vh + 64px);
+  z-index: 9;
+  transition: 0.5s;
+}
+
+.header__menu--open {
+  top: calc(-100vh + 64px);
+  transition: 0.5s;
 }

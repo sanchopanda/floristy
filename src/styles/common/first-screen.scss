@@ -1,0 +1,14 @@
+.first-screen {
+  height: 100vh;
+}
+
+.first-screen__bg {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 64px);
+  margin-top: 64px;
+  & img {
+    height: 100%;
+    object-fit: cover;
+  }
+}

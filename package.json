@@ -50,6 +50,7 @@
     "gulp-stylelint": "^13.0.0",
     "gulp-svgstore": "^7.0.1",
     "gulp-w3c-html-validator": "^1.4.4",
+    "gulp-webp": "^4.0.1",
     "husky": "^4.2.3",
     "lighthouse": "^5.6.0",
     "node-sass": "^4.13.1",

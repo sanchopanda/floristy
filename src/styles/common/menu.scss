@@ -5,18 +5,33 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  padding-top: 134px;
   list-style: none;
   background-color: #3b181e;
 }
 
 .menu__item {
-  font-family: Forum;
+  text-align: center;
+  margin-bottom: 50px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.menu__link {
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 17px;
-  text-align: center;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+}
+
+.menu__item--active .menu__link,
+.menu__item:hover .menu__link {
+  font-size: 25px;
+  line-height: 28px;
+  transition: 0.5s;
 }
