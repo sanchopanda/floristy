@@ -1,0 +1,29 @@
+@import "../../libs/normalize.css/normalize";
+@import "../mixins/media";
+@import "../utils/fonts";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 16px;
+}

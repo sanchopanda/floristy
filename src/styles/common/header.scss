@@ -1,0 +1,10 @@
+.header {
+  position: relative;
+}
+
+.header__menu {
+  position: absolute;
+  top: calc(-100vh + 65px);
+  top: 0;
+  //z-index: -1;
+}
