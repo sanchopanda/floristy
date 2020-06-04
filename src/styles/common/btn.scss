@@ -1,0 +1,21 @@
+.btn {
+  display: inline-block;
+  height: 50px;
+  padding: 0 30px;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  line-height: 48px;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  &:hover {
+    color: #000000;
+    background: #ffffff;
+  }
+}
+
+.btn--shadow {
+  background: rgba(0, 0, 0, 0.4);
+}

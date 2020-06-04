@@ -1,0 +1,46 @@
+.catalog {
+  margin-bottom: 100px;
+}
+
+.catalog__title {
+  font-family: Forum;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+
+.catalog__link {
+  display: block;
+  position: relative;
+  font-family: Forum;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.catalog__number {
+  position: absolute;
+  display: flex;
+  font-size: 20px;
+  line-height: 22px;
+  left: 20px;
+  top: 23px;
+  & span {
+    display: block;
+    width: 70px;
+    height: 1px;
+    background-color: #fff;
+    margin: auto 0;
+    margin-right: 10px;
+  }
+}
+
+.catalog__des {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+}

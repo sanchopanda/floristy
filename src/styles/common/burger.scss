@@ -4,6 +4,7 @@
   background-color: rgba(0, 0, 0, 0);
   padding: 12px 0;
   border: none;
+  transition: 0.5s;
 }
 
 .burger__line {
@@ -14,11 +15,13 @@
   &:first-child {
     margin-bottom: 12px;
   }
+  transition: 0.5s;
 }
 
 .burger--open {
   padding: 8px;
   padding-left: 4px;
+  transition: 0.5s;
   & .burger__line {
     width: 29px;
     &:first-child {

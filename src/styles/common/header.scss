@@ -6,15 +6,7 @@
   justify-content: space-between;
   height: 64px;
   padding: 15px 30px 20px;
-}
-
-.header__logo {
-  position: relative;
-  z-index: 10;
-}
-
-.header__burger {
-  position: relative;
+  background-color: $main-color;
   z-index: 10;
 }
 
@@ -26,6 +18,17 @@
 }
 
 .header__menu--open {
-  top: calc(-100vh + 64px);
+  top: 0;
+  transition: 0.5s;
+}
+
+.header__logo {
+  margin-left: 0;
+  transition: 0.5s;
+}
+
+.header__logo--open {
+  margin-left: 50%;
+  transform: translateX(-50%);
   transition: 0.5s;
 }

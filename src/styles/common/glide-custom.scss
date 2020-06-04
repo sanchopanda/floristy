@@ -1,0 +1,23 @@
+.glide__slides {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.glide__bullets {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.glide__bullet {
+  width: 22%;
+  border: none;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  outline: none;
+}
+
+.glide__bullet--active {
+  background: #ffffff;
+}
