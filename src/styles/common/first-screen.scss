@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  @include media-tablet {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }
 
 .first-screen__bg {
@@ -17,10 +22,14 @@
     width: 100%;
     object-fit: cover;
   }
+  @include media-tablet {
+    top: 0;
+    height: 100vh;
+  }
 }
 
 .first-screen__title {
-  margin-top: 167px;
+  margin-top: 29vh;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
@@ -30,15 +39,39 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 35px;
+  margin-bottom: 7vh;
+  @include media-tablet {
+    margin-top: 32vh;
+    font-size: 70px;
+    line-height: 87px;
+  }
 }
 
 .first-screen__btn {
-  margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 15vh;
+}
+
+.first-screen__social-media {
+  width: 250px;
+  @include media-tablet {
+    width: 460px;
+  }
 }
 
 .first-screen__down {
-  margin-top: 30px;
-  margin-bottom: 140px;
+  display: block;
+  margin-top: 5vh;
+  margin-bottom: 78px;
+  @include media-tablet {
+    margin-bottom: 55px;
+    margin-top: 4vh;
+  }
+  & svg {
+    width: 14px;
+    height: 21px;
+    @include media-tablet {
+      width: 27px;
+      height: 41px;
+    }
+  }
 }

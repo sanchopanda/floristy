@@ -1,13 +1,18 @@
 .catalog {
+  padding-top: 62px;
   margin-bottom: 100px;
+  @include media-tablet {
+    padding-top: 100px;
+  }
 }
 
 .catalog__title {
-  font-family: Forum;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 34px;
-  text-transform: uppercase;
+  & span {
+    display: none;
+    @include media-tablet {
+      display: block;
+    }
+  }
 }
 
 .catalog__link {
@@ -35,11 +40,18 @@
   }
 }
 
+.catalog__img {
+  & img {
+    width: 100%;
+  }
+}
+
 .catalog__des {
   position: absolute;
   left: 20px;
   bottom: 15px;
   margin: 0;
+  font-weight: normal;
   font-size: 16px;
   line-height: 27px;
   letter-spacing: 0.1em;

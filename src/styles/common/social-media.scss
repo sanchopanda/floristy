@@ -1,10 +1,15 @@
 .social-media {
   display: flex;
-  width: 260px;
   list-style: none;
   padding: 0;
   margin: 0;
   justify-content: space-between;
+}
+.social-media__item {
+  & svg {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .social-media__item--circle {
@@ -15,4 +20,24 @@
   height: 35px;
   border-radius: 50%;
   background-color: $main-color;
+  & svg {
+    width: 18px;
+    height: 18px;
+    @include media-tablet {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  @include media-tablet {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.social-media__link {
+  display: block;
+  height: 18px;
+  @include media-tablet {
+    height: 28px;
+  }
 }

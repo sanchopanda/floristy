@@ -5,6 +5,9 @@
   background: rgba(0, 0, 0, 0);
   border: 1px solid #ffffff;
   box-sizing: border-box;
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
   line-height: 48px;
   font-size: 10px;
   letter-spacing: 0.15em;
@@ -14,8 +17,24 @@
     color: #000000;
     background: #ffffff;
   }
+  @include media-tablet {
+    height: 60px;
+    padding: 0 40px;
+    font-size: 15px;
+    line-height: 58px;
+  }
 }
 
 .btn--shadow {
   background: rgba(0, 0, 0, 0.4);
+}
+
+.btn--dark {
+  background: #010001;
+  border-color: #010001;
+}
+
+.btn--white {
+  background: #ffffff;
+  color: #010001;
 }
