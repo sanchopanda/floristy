@@ -22,7 +22,7 @@ module.exports = function serve(cb) {
     cors: true
   })
 
-  gulp.watch('src/img/*.{gif,png,jpg,svg}', gulp.series(imageMinify, readyReload))
+  gulp.watch('src/img/**/*.{gif,png,jpg,svg}', gulp.series(imageMinify, readyReload))
   gulp.watch('src/img/*.{png,jpg}', gulp.series(imageWebp, readyReload))
   gulp.watch('src/img/sprite/*.svg', gulp.series(svgSprite, readyReload))
   gulp.watch('src/styles/**/*.scss', gulp.series(styles, cb => gulp.src('build/css').pipe(server.stream()).on('end', cb)))

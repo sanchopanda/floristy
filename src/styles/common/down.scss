@@ -1,4 +1,55 @@
 .down {
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  outline: none;
+}
+
+.down__arrow {
+  @include media-laptop {
+    display: none;
+  }
+}
+
+.down__mouse {
+  display: none;
+  @include media-laptop {
+    display: block;
+    width: 1px;
+    padding: 10px 18px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+    &:hover {
+      .down__scroller {
+        transform: translateY(15px);
+        animation: none;
+      }
+    }
+  }
+}
+.down__scroller {
+  width: 1px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
 }

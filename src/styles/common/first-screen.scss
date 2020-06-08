@@ -1,5 +1,26 @@
 .first-screen {
   height: 100vh;
+  @include media-laptop {
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      height: 75px;
+      width: 100%;
+      background: linear-gradient(
+        0deg,
+        #3b181e 3.33%,
+        rgba(59, 24, 30, 0) 100%
+      );
+      z-index: 9999999;
+    }
+  }
+}
+
+.first-screen__container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,6 +28,9 @@
   @include media-tablet {
     padding-right: 100px;
     padding-left: 100px;
+  }
+  @include media-laptop {
+    position: relative;
   }
 }
 
@@ -45,10 +69,15 @@
     font-size: 70px;
     line-height: 87px;
   }
+  @include media-laptop {
+    margin-top: 30vh;
+    font-size: 120px;
+    line-height: 132px;
+  }
 }
 
 .first-screen__btn {
-  margin-bottom: 15vh;
+  margin-bottom: auto;
 }
 
 .first-screen__social-media {
@@ -56,15 +85,27 @@
   @include media-tablet {
     width: 460px;
   }
+  @include media-laptop {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    left: 100px;
+    bottom: 114px;
+  }
 }
 
 .first-screen__down {
   display: block;
   margin-top: 5vh;
   margin-bottom: 78px;
+  cursor: pointer;
   @include media-tablet {
     margin-bottom: 55px;
     margin-top: 4vh;
+  }
+  @include media-laptop {
+    margin-bottom: 114px;
   }
   & svg {
     width: 14px;
@@ -72,6 +113,27 @@
     @include media-tablet {
       width: 27px;
       height: 41px;
+    }
+  }
+  span {
+    display: none;
+    @include media-tablet {
+      position: absolute;
+      right: 100px;
+      bottom: 114px;
+      display: block;
+      writing-mode: tb-rl;
+      font-family: Forum;
+      font-size: 20px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+    & svg {
+      @include media-tablet {
+        margin-top: 30px;
+        height: 18px;
+        width: 12px;
+      }
     }
   }
 }

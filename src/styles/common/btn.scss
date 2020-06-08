@@ -1,6 +1,5 @@
 .btn {
   display: inline-block;
-  height: 50px;
   padding: 0 30px;
   background: rgba(0, 0, 0, 0);
   border: 1px solid #ffffff;
@@ -13,15 +12,20 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
   &:hover {
     color: #000000;
     background: #ffffff;
   }
   @include media-tablet {
-    height: 60px;
     padding: 0 40px;
     font-size: 15px;
     line-height: 58px;
+  }
+  @include media-tablet {
+    padding: 0 40px;
+    font-size: 15px;
+    line-height: 48px;
   }
 }
 

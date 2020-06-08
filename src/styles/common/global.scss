@@ -32,6 +32,11 @@ a {
 
 .container {
   padding: 0 16px;
+  margin: 0 auto;
+  @include media-tablet {
+    padding: 0 40px;
+    max-width: 1600px;
+  }
 }
 
 h2 {
@@ -42,6 +47,7 @@ h2 {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
+  letter-spacing: 0.06em;
   & span {
     display: block;
     width: 85px;

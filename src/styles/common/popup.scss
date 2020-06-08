@@ -3,7 +3,6 @@
   left: -50%;
   top: 50%;
   transform: translate(-50%, calc(-50% + 18px));
-  //transform: translateY(-50%);
   width: 288px;
   padding: 20px;
   background-color: $main-color;
@@ -12,6 +11,10 @@
   align-items: center;
   z-index: 9999999;
   transition: 0.5s;
+  @include media-tablet {
+    width: 464px;
+    padding: 40px;
+  }
 }
 
 .popup--open {
@@ -24,6 +27,9 @@
   border: none;
   align-self: flex-end;
   margin-bottom: 15px;
+  @include media-tablet {
+    margin-bottom: 43px;
+  }
 }
 
 .popup__title {
@@ -31,6 +37,9 @@
   text-align: center;
   letter-spacing: 0.09em;
   margin-bottom: 30px;
+  @include media-tablet {
+    margin-bottom: 60px;
+  }
 }
 
 .popup__form {
@@ -53,9 +62,18 @@
   &::placeholder {
     color: #ffffff;
   }
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 20px 32px;
+    margin-bottom: 25px;
+  }
 }
 
 .popup__btn {
   width: 100%;
   margin-top: 10px;
+  @include media-tablet {
+    margin-top: 15px;
+  }
 }

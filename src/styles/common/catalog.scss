@@ -4,6 +4,9 @@
   @include media-tablet {
     padding-top: 100px;
   }
+  @include media-laptop {
+    padding-top: 170px;
+  }
 }
 
 .catalog__title {
@@ -13,6 +16,20 @@
       display: block;
     }
   }
+  @include media-laptop {
+    margin-bottom: 98px;
+  }
+}
+
+.catalog__border {
+  display: none;
+}
+
+.catalog__btn {
+  position: absolute;
+  left: 20px;
+  bottom: -80px;
+  transition: 0.5s;
 }
 
 .catalog__link {
@@ -21,6 +38,29 @@
   font-family: Forum;
   text-transform: uppercase;
   color: #ffffff;
+  @include media-laptop {
+    padding: 10px;
+    &:hover {
+      padding: 9px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      & .catalog__btn {
+        position: absolute;
+        bottom: 30px;
+        transition: 0.5s;
+      }
+      & .catalog__des {
+        bottom: 100px;
+        transition: 0.5s;
+      }
+      & .catalog__number {
+        flex-direction: row;
+        transition: 0.5s;
+        & span {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 }
 
 .catalog__number {
@@ -37,6 +77,20 @@
     background-color: #fff;
     margin: auto 0;
     margin-right: 10px;
+    @include media-tablet {
+      margin-right: 0px;
+      margin-left: 12px;
+    }
+    @include media-laptop {
+      margin-top: auto;
+      margin-bottom: 0;
+    }
+  }
+  @include media-tablet {
+    left: 30px;
+    top: 43px;
+    flex-direction: row-reverse;
+    transition: 0.5s;
   }
 }
 
@@ -55,4 +109,9 @@
   font-size: 16px;
   line-height: 27px;
   letter-spacing: 0.1em;
+  @include media-tablet {
+    left: 30px;
+    bottom: 30px;
+    transition: 0.5s;
+  }
 }

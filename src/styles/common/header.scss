@@ -3,15 +3,53 @@
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   height: 64px;
   padding: 15px 30px 20px;
   background-color: $main-color;
   z-index: 10;
+  align-items: center;
   @include media-tablet {
     background-color: rgba(0, 0, 0, 0);
     padding: 38px 50px;
   }
+  @include media-laptop {
+    padding: 87px 90px;
+    max-width: 1920px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.header__burger-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__title {
+  display: none;
+  @include media-laptop {
+    display: inline-block;
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    width: 56px;
+    overflow: hidden;
+    margin-top: 2px;
+    transition: 0.5s;
+  }
+}
+
+.header__title--close {
+  width: 0;
+  margin-left: 0;
+
+  transition: 0.5s;
 }
 
 .header__logo {
@@ -30,7 +68,7 @@
 
 .header__menu {
   position: absolute;
-  top: -100vh;
+  top: -120vh;
   z-index: 9;
   transition: 0.5s;
 }

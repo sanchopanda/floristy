@@ -5,6 +5,10 @@
   padding: 12px 0;
   border: none;
   transition: 0.5s;
+  cursor: pointer;
+  @include media-laptop {
+    width: 23px;
+  }
 }
 
 .burger__line {
@@ -14,6 +18,10 @@
   background-color: #fff;
   &:first-child {
     margin-bottom: 12px;
+    @include media-laptop {
+      margin-top: 2px;
+      margin-bottom: 6px;
+    }
   }
   transition: 0.5s;
 }
@@ -24,6 +32,9 @@
   transition: 0.5s;
   & .burger__line {
     width: 29px;
+    @include media-laptop {
+      width: 39px;
+    }
     &:first-child {
       margin-bottom: 0;
       transform: rotate(45deg);
@@ -31,5 +42,9 @@
     &:last-child {
       transform: rotate(-45deg);
     }
+  }
+  @include media-laptop {
+    padding: 0;
+    width: 38px;
   }
 }

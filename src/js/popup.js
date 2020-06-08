@@ -18,7 +18,7 @@ export function togglePopup() {
             closePopup();
         });
         document.querySelector(`body`).addEventListener('mousedown', (e) => {
-            if (e.target != popup) {
+            if (e.target != popup && !popup.contains(e.target)) {
                 closePopup();
             };
         });
