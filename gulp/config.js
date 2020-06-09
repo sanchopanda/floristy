@@ -6,7 +6,7 @@ const src = path.join(root, 'src')
 module.exports = {
   root,
   src,
-  buildPath: path.join(root, '/build'),
+  buildPath: path.join(root, '/docs'),
   twig2html: {
     beautifyHtml: false
   },

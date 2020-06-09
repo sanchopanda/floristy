@@ -11,6 +11,6 @@ module.exports = function twig2html() {
     .pipe(twig())
     .pipe(htmlValidator())
     .pipe(bemValidator())
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('docs'))
 }
 
