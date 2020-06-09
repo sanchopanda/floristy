@@ -59,10 +59,10 @@
                 <path d="M7 19.9014L1.19672 13.9887M7 19.9014L12.7973 14.2141M7 19.9014L7.17941 0.92916" stroke="white" />
             </svg>
 
-            <div class="down__mouse">
-                <div class="down__scroller"></div>
-            </div>
-            <span>cмотреть каталог
+            <span class="down__mouse">
+                <span class="down__scroller"></span>
+            </span>
+            <span class="down__text">cмотреть каталог
                 <svg viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 19.9014L1.19672 13.9887M7 19.9014L12.7973 14.2141M7 19.9014L7.17941 0.92916" stroke="white" />
                 </svg>
@@ -99,7 +99,7 @@
                     } %}
                 {% for slide in slides %}
                 <li class="glide__slide">
-                    <a href="/catalog{{ slide.number }}.html" class="catalog__link">
+                    <a href="catalog{{ slide.number }}.html" class="catalog__link">
                         <div class="catalog__number">
                             <span></span>0{{ slide.number }}
                         </div>
@@ -110,7 +110,7 @@
                         <h4 class="catalog__des">
                             {{ slide.des }}
                         </h4>
-                        <button class="catalog__btn btn btn--white">смотреть работы</button>
+                        <div class="catalog__btn btn btn--white">смотреть работы</div>
                     </a>
                 </li>
                 {% endfor %}

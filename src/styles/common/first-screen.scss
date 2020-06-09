@@ -98,25 +98,4 @@
 .first-screen__down {
   margin-top: 5vh;
   margin-bottom: 78px;
-  span {
-    display: none;
-    @include media-laptop {
-      position: absolute;
-      right: 100px;
-      bottom: 114px;
-      display: block;
-      writing-mode: tb-rl;
-      font-family: Forum;
-      font-size: 20px;
-      line-height: 22px;
-      color: #ffffff;
-    }
-    & svg {
-      @include media-laptop {
-        margin-top: 30px;
-        height: 18px;
-        width: 12px;
-      }
-    }
-  }
 }
