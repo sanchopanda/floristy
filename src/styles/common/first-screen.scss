@@ -14,7 +14,7 @@
         #3b181e 3.33%,
         rgba(59, 24, 30, 0) 100%
       );
-      z-index: 9999999;
+      z-index: 20;
     }
   }
 }
@@ -96,28 +96,11 @@
 }
 
 .first-screen__down {
-  display: block;
   margin-top: 5vh;
   margin-bottom: 78px;
-  cursor: pointer;
-  @include media-tablet {
-    margin-bottom: 55px;
-    margin-top: 4vh;
-  }
-  @include media-laptop {
-    margin-bottom: 114px;
-  }
-  & svg {
-    width: 14px;
-    height: 21px;
-    @include media-tablet {
-      width: 27px;
-      height: 41px;
-    }
-  }
   span {
     display: none;
-    @include media-tablet {
+    @include media-laptop {
       position: absolute;
       right: 100px;
       bottom: 114px;
@@ -129,7 +112,7 @@
       color: #ffffff;
     }
     & svg {
-      @include media-tablet {
+      @include media-laptop {
         margin-top: 30px;
         height: 18px;
         width: 12px;

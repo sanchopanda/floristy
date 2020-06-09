@@ -1,5 +1,7 @@
 import Glide from '../libs/glide/glide.min.js';
 
+const slider = document.querySelector(`.catalog__slider`);
+
 const getSlideCount = () => {
     if (window.innerWidth >= 1366) {
         return 4;
@@ -19,20 +21,21 @@ const getSlideGap = () => {
 
 
 
-export function glideSlider() {
-    let slideGap = 28;
-
-    new Glide(`.glide`, {
-        perView: getSlideCount(),
-        gap: getSlideGap()
-    }).mount();
-
-    window.addEventListener('resize', function () {
-        new Glide(`.glide`, {
+export function catalogSlider() {
+    if (slider) {
+        new Glide(`.catalog__slider`, {
             perView: getSlideCount(),
             gap: getSlideGap()
         }).mount();
-    });
+
+        window.addEventListener('resize', function () {
+            new Glide(`.catalog__slider`, {
+                perView: getSlideCount(),
+                gap: getSlideGap()
+            }).mount();
+        });
+    }
+
 
 }
 

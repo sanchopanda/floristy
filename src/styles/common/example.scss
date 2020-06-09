@@ -1,0 +1,137 @@
+.example {
+  @include media-laptop {
+    position: relative;
+  }
+  @include media-laptop {
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50%;
+      height: calc(100% - 60px);
+      background-color: rgba(0, 0, 0, 0);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      top: 30px;
+      left: 30px;
+      z-index: 8;
+    }
+  }
+}
+
+.example__bg {
+  & img {
+    height: calc(100vh - 64px);
+    margin-top: 64px;
+    object-fit: cover;
+    object-position: left;
+    @include media-tablet {
+      height: 67vw;
+      width: 100%;
+      margin-top: 76px;
+    }
+    @include media-laptop {
+      position: absolute;
+      top: -76px;
+      left: 0;
+      width: 50%;
+      height: 100vh;
+    }
+  }
+}
+
+.example-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+  overflow: hidden;
+  @include media-tablet {
+    padding: 0 60px;
+  }
+  @include media-laptop {
+    width: 50%;
+    margin-left: 50%;
+    height: 100vh;
+    max-width: 960px;
+    padding-left: 114px;
+    padding-right: 280px;
+  }
+}
+
+.example__title {
+  max-width: 250px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+  @include media-tablet {
+    margin-top: 0;
+    max-width: 100%;
+  }
+  @include media-laptop {
+    margin-top: 0;
+    margin-bottom: 50px;
+    max-width: 508px;
+  }
+}
+
+.example__des {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 30px;
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @include media-laptop {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.example__btn {
+  margin-bottom: 30px;
+  @include media-tablet {
+    margin-bottom: 70px;
+  }
+}
+
+.example__slider {
+  width: calc(100% + 65px);
+  margin-bottom: 45px;
+  @include media-tablet {
+    width: 100%;
+    order: -1;
+    margin-top: 15px;
+    margin-bottom: 70px;
+  }
+  @include media-laptop {
+    order: 0;
+    width: 552px;
+    margin-bottom: 0;
+  }
+}
+
+.example__inst {
+  display: none;
+  @include media-laptop {
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    bottom: 45px;
+    right: 90px;
+    & a {
+      display: flex;
+      align-items: center;
+      & span {
+        color: #ffffff;
+        margin-right: 29px;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+  }
+}

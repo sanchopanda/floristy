@@ -40,6 +40,9 @@
 
 .menu__item--footer {
   margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   @include media-tablet {
     margin-bottom: 20px;
   }

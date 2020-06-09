@@ -4,7 +4,9 @@ const target = document.querySelector(`.catalog`);
 
 
 export function scrollDown() {
-    down.onclick = () => {
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (down) {
+        down.onclick = () => {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+        };
     };
 };
