@@ -15,14 +15,12 @@
   & .social-media__background {
     color: rgba(0, 0, 0, 0);
   }
-  @include media-laptop {
-    &:hover {
-      & svg {
-        color: black;
-      }
-      & .social-media__background {
-        color: white;
-      }
+  &:hover {
+    & svg {
+      color: black;
+    }
+    & .social-media__background {
+      color: white;
     }
   }
 }

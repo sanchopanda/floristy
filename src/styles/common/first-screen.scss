@@ -53,7 +53,7 @@
 }
 
 .first-screen__title {
-  margin-top: 29vh;
+  margin-top: 25vh;
   font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
@@ -65,7 +65,6 @@
   color: #ffffff;
   margin-bottom: 7vh;
   @include media-tablet {
-    margin-top: 32vh;
     font-size: 70px;
     line-height: 87px;
   }
