@@ -3,7 +3,7 @@
 {% block page %}
 <section class="example">
     <picture class="example__bg">
-        <source srcset="img/catalog2/catalog2-bg.webp">
+        <source type="image/webp" srcset="img/catalog2/catalog2-bg.webp">
         <img src="img/catalog2/catalog2-bg.jpg" alt="невеста">
     </picture>
     <div class="example-block">
@@ -23,7 +23,7 @@
                     {% for number in '1'..'8' %}
                     <li class="glide__slide">
                         <picture class="example__img">
-                            <source srcset="img/catalog2/catalog2-slide{{ number }}.webp">
+                            <source type="image/webp" srcset="img/catalog2/catalog2-slide{{ number }}.webp">
                             <img src="img/catalog2/catalog2-slide{{ number }}.jpg" alt="букет">
                         </picture>
                     </li>
