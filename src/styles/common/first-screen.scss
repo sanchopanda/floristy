@@ -2,6 +2,7 @@
   height: 100vh;
   @include media-laptop {
     position: relative;
+    min-height: 800px;
     &:after {
       content: "";
       display: block;
@@ -49,6 +50,9 @@
   @include media-tablet {
     top: 0;
     height: 100vh;
+  }
+  @include media-laptop {
+    height: 100%;
   }
 }
 
